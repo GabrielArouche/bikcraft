@@ -5,9 +5,8 @@
 .footer {
   display: grid;
   grid-template-columns: 3fr 5fr 4fr;
-  gap: 40px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
 }
 .footer h3 {
   margin-bottom: 32px;
@@ -17,6 +16,10 @@
   margin-bottom: 32px;
 }
 
+.footer li {
+  margin-bottom: 16px;
+}
+
 .footer-contato li:nth-child(even):after {
   content: "";
   display: block;
@@ -24,10 +27,6 @@
   height: 2px;
   margin-top: 16px;
   background-color: var(--cor-11);
-}
-
-.footer-contato li {
-  margin-bottom: 16px;
 }
 
 .footer-redes {
@@ -55,7 +54,7 @@
 
 @media (max-width: 600px) {
   .footer {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 60px;
   }
   .footer-copy {
